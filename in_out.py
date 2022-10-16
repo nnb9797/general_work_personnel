@@ -4,6 +4,6 @@ def append_data(name_file, data):
 
 
 def get_info(name_file):
-    with open(name_file, 'r') as file:
+    with open(name_file, 'r', encoding="UTF-8") as file:
         info = file.read().split(",")
     return info
