@@ -28,3 +28,18 @@ def add_data():
     info_logger(f'Новая запись в таблицу "Department" {data_personal}')
 
     print_data("\nДанные успешно добавлены.")
+
+def search_data():
+    id_pes = input("Введите id: ")
+    info_logger(f'Запрос на поиск по ID {id_pes}')
+
+    list_data = get_info("PI.csv.txt")
+    list_data += get_info("Salary.csv.txt")
+    list_data += get_info("Department.csv.txt")
+    count = 0
+    for i in list_data:
+        if f"ID {id_pes}" in i:
+            print(i)
+            count += 1
+    if count == 0:
+        print("Информация не найдена")

@@ -1,7 +1,4 @@
-import in_out
-from logger import *
 import ui
-from search import *
 from answers import *
 
 
@@ -14,6 +11,4 @@ def button_click():
     elif user_answer == "2":
         add_data()
     elif user_answer == "3":
-        id_pes = input("Введите id: ")
-        search_data(id_pes)
-        info_logger(f'Запрос на поиск по ID {id_pes}')
+        search_data()
