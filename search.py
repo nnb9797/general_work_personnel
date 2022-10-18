@@ -1,9 +1,10 @@
 import in_out
 
+
 def search_data(id_pes):
-    list_data = in_out.get_info("general_work_personnel\PI.csv.txt")  
-    list_data += in_out.get_info("general_work_personnel\Salary.csv.txt")  
-    list_data += in_out.get_info("general_work_personnel\Department.csv.txt")
+    list_data = in_out.get_info("PI.csv.txt")
+    list_data += in_out.get_info("Salary.csv.txt")
+    list_data += in_out.get_info("Department.csv.txt")
     count = 0
     for i in list_data:
         if f"ID {id_pes}" in i:
