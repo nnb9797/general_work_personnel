@@ -30,5 +30,4 @@
 23:06: Info: Новая запись в таблицу "PI" ID 22 phone: +7 906 406 62 22 surname: Smirnov name: Petr patronymic: Aleks
 23:06: Info: Новая запись в таблицу "Salary" ID 22 250 000
 23:06: Info: Новая запись в таблицу "Department" ID 22 Department Digtal Position Mag
-23:06: Info: Запрос на поиск по ID 22
-23:18: Info: Запрос на вывод информации
+
